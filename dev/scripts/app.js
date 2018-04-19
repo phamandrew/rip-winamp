@@ -1,14 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class App extends React.Component {
-    render() {
-      return (
-        <div>
-          Hello
-        </div>
-      )
-    }
+function firstComponent() {
+	return(
+		<p>Guy is a cat! 🐱</p>
+	);
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+const secondComponent = () => {
+	return (
+		<p>Bobo is a dog! 🐶</p>
+	)
+}
+
+// const masterComponent = () => {
+// 	return(
+		
+// 	);
+// }
+
+ReactDOM.render(<firstComponent />, document.getElementById('hook'));
